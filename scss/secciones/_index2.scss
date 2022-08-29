@@ -1,0 +1,352 @@
+
+.containerIndex2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "marcas marcas marcas marcas"
+      "navegacion navegacion navegacion navegacion"
+      "menuProductos menuProductos menuProductos menuProductos"
+      "footerRedes footerRedes footerRedes footerRedes";
+  }
+  
+  .marcas { 
+    grid-area: marcas; 
+    width: 100%;
+    
+
+    .navMarcas{
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+}
+
+.navegacion { 
+    grid-area: navegacion;
+    
+    .navegacionBarra{
+        background-image: linear-gradient(black,rgb(85, 85, 85));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .barraLinks ul{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+
+            li{
+                list-style-type: none;
+                width: 100%;
+
+                a{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    font-size: 12px;
+                    margin: 0 3px 0 3px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        transition: 2s;
+                        border-radius: 4px;
+                        padding: 4px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+   
+}
+  
+  
+.menuProductos { 
+    grid-area: menuProductos;
+    .presentacionProductos{
+        background-image: url("/img/fondo10.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: white;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: blueviolet;
+            
+        }
+    }
+
+    .allProductos{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        .tiendaPc{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                color: blueviolet;
+                font-size: 45px;
+                margin: 30px 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            .imgPc{
+                
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border: 2px solid blueviolet;
+                    border-radius: 10px;
+                    padding: 30px;
+                    margin: 20px 0;
+
+                    h3{
+                        color: white;
+                    }
+
+                    a{
+                        color: white;
+                        background-color: blueviolet;
+                        padding: 4px;
+                        border-radius: 4px;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: indigo;
+                            transition: 1.2s;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        .tiendaMonitores{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                color: blueviolet;
+                font-size: 45px;
+                margin: 30px 0;
+                font-family: 'Courier New', Courier, monospace;
+            }   
+
+            .imgMonitores{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border: 2px solid blueviolet;
+                    border-radius: 10px;
+                    padding: 30px;
+                    margin: 20px 0;
+
+                    h3{
+                        color: white;
+                    }
+
+                    a{
+                        color: white;
+                        background-color: blueviolet;
+                        padding: 4px;
+                        border-radius: 4px;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: indigo;
+                            transition: 1.2s;
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        .tiendaPerifericos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                color: blueviolet;
+                font-size: 45px;
+                margin: 30px 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            .imgPerifericos{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border: 2px solid blueviolet;
+                    border-radius: 10px;
+                    padding: 30px;
+                    margin: 20px 0;
+
+                    h3{
+                        color: white;
+                    }
+
+                    a{
+                        color: white;
+                        background-color: blueviolet;
+                        padding: 4px;
+                        border-radius: 4px;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: indigo;
+                            transition: 1.2s;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    
+   
+}
+
+.footerRedes { 
+    grid-area: footerRedes; 
+    background-image: linear-gradient(black,rgb(85, 85, 85));
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+
+}
+
+
+@media (min-width:950px){
+    .containerIndex2{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .barraLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                                margin: 0 30px;
+                            }
+                        }
+                    }
+                }
+            
+        
+            }
+        }
+    }
+
+    .menuProductos{
+        .allProductos{
+            .tiendaPc{
+                margin: 40px 0;
+                .imgPc{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    div{
+                        margin: 10 10px;
+
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+
+            .tiendaMonitores{
+                margin: 40px 0;
+                .imgMonitores{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    div{
+                        margin: 10 10px;
+
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+
+            .tiendaPerifericos{
+                margin: 40px 0;
+                .imgPerifericos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    div{
+                        margin: 10 10px;
+
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:550px){
+    .containerIndex2{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .barraLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                                margin: 0 30px;
+                            }
+                        }
+                    }
+                }
+            
+        
+            }
+        }
+    }
+}

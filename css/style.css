@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+.contenedorPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "marcas marcas marcas marcas" "navegacion navegacion navegacion navegacion" "seccionPrincipal seccionPrincipal seccionPrincipal seccionPrincipal" "footerRedes footerRedes footerRedes footerRedes"; }
+  .contenedorPrincipal .marcas {
+    grid-area: marcas;
+    width: 100%; }
+    .contenedorPrincipal .marcas .navMarcas {
+      background-color: black;
+      display: flex;
+      justify-content: space-evenly; }
+  .contenedorPrincipal .navegacion {
+    grid-area: navegacion; }
+    .contenedorPrincipal .navegacion .navegacionBarra {
+      background-image: linear-gradient(black, #555555);
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedorPrincipal .navegacion .navegacionBarra .barraLinks ul {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        padding: 0; }
+        .contenedorPrincipal .navegacion .navegacionBarra .barraLinks ul li {
+          list-style-type: none;
+          width: 100%; }
+          .contenedorPrincipal .navegacion .navegacionBarra .barraLinks ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 3px 0 3px; }
+            .contenedorPrincipal .navegacion .navegacionBarra .barraLinks ul li a:hover {
+              background-color: white;
+              color: black;
+              transition: 2s;
+              border-radius: 4px;
+              padding: 4px; }
+  .contenedorPrincipal .seccionPrincipal {
+    grid-area: seccionPrincipal; }
+    .contenedorPrincipal .seccionPrincipal .mainInfo {
+      background-image: linear-gradient(black, #151515);
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .contenedorPrincipal .seccionPrincipal .mainInfo h1 {
+        color: white; }
+      .contenedorPrincipal .seccionPrincipal .mainInfo p {
+        color: white;
+        width: 70%;
+        text-align: center; }
+      .contenedorPrincipal .seccionPrincipal .mainInfo span {
+        color: blueviolet; }
+    .contenedorPrincipal .seccionPrincipal .muestras {
+      background-color: black;
+      display: flex;
+      height: 1300px;
+      flex-direction: column; }
+      .contenedorPrincipal .seccionPrincipal .muestras div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 40px; }
+        .contenedorPrincipal .seccionPrincipal .muestras div:hover {
+          background-color: #343434;
+          border-radius: 5px;
+          transition: 2s; }
+        .contenedorPrincipal .seccionPrincipal .muestras div .linksMuestras {
+          text-decoration: none;
+          color: blueviolet; }
+          .contenedorPrincipal .seccionPrincipal .muestras div .linksMuestras:hover {
+            color: white;
+            transition: 2s; }
+  .contenedorPrincipal .footerRedes {
+    grid-area: footerRedes;
+    background-image: linear-gradient(black, #555555);
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center; }
+  .contenedorPrincipal #link1 {
+    text-decoration: none;
+    color: white;
+    background-color: #a000b2;
+    padding: 8px;
+    border-radius: 6px; }
+
+@media (min-width: 950px) {
+  .contenedorPrincipal .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contenedorPrincipal .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; }
+  .contenedorPrincipal .seccionPrincipal .muestras {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+@media (min-width: 600px) {
+  .contenedorPrincipal .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .contenedorPrincipal .seccionPrincipal .muestras {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto; } }
+
+.containerIndex2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "marcas marcas marcas marcas" "navegacion navegacion navegacion navegacion" "menuProductos menuProductos menuProductos menuProductos" "footerRedes footerRedes footerRedes footerRedes"; }
+
+.marcas {
+  grid-area: marcas;
+  width: 100%; }
+  .marcas .navMarcas {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly; }
+
+.navegacion {
+  grid-area: navegacion; }
+  .navegacion .navegacionBarra {
+    background-image: linear-gradient(black, #555555);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .navegacion .navegacionBarra .barraLinks ul {
+      display: flex;
+      margin: 0;
+      width: 100%;
+      padding: 0; }
+      .navegacion .navegacionBarra .barraLinks ul li {
+        list-style-type: none;
+        width: 100%; }
+        .navegacion .navegacionBarra .barraLinks ul li a {
+          color: white;
+          text-decoration: none;
+          font-size: 12px;
+          margin: 0 3px 0 3px; }
+          .navegacion .navegacionBarra .barraLinks ul li a:hover {
+            background-color: white;
+            color: black;
+            transition: 2s;
+            border-radius: 4px;
+            padding: 4px; }
+
+.menuProductos {
+  grid-area: menuProductos; }
+  .menuProductos .presentacionProductos {
+    background-image: url("/img/fondo10.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .menuProductos .presentacionProductos h1 {
+      color: white;
+      font-weight: bold;
+      padding-top: 30px; }
+    .menuProductos .presentacionProductos a {
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: blueviolet; }
+  .menuProductos .allProductos {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; }
+    .menuProductos .allProductos .tiendaPc {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .menuProductos .allProductos .tiendaPc h1 {
+        color: blueviolet;
+        font-size: 45px;
+        margin: 30px 0;
+        font-family: 'Courier New', Courier, monospace; }
+      .menuProductos .allProductos .tiendaPc .imgPc div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid blueviolet;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px 0; }
+        .menuProductos .allProductos .tiendaPc .imgPc div h3 {
+          color: white; }
+        .menuProductos .allProductos .tiendaPc .imgPc div a {
+          color: white;
+          background-color: blueviolet;
+          padding: 4px;
+          border-radius: 4px;
+          text-decoration: none; }
+          .menuProductos .allProductos .tiendaPc .imgPc div a:hover {
+            background-color: indigo;
+            transition: 1.2s; }
+    .menuProductos .allProductos .tiendaMonitores {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .menuProductos .allProductos .tiendaMonitores h1 {
+        color: blueviolet;
+        font-size: 45px;
+        margin: 30px 0;
+        font-family: 'Courier New', Courier, monospace; }
+      .menuProductos .allProductos .tiendaMonitores .imgMonitores div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid blueviolet;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px 0; }
+        .menuProductos .allProductos .tiendaMonitores .imgMonitores div h3 {
+          color: white; }
+        .menuProductos .allProductos .tiendaMonitores .imgMonitores div a {
+          color: white;
+          background-color: blueviolet;
+          padding: 4px;
+          border-radius: 4px;
+          text-decoration: none; }
+          .menuProductos .allProductos .tiendaMonitores .imgMonitores div a:hover {
+            background-color: indigo;
+            transition: 1.2s; }
+    .menuProductos .allProductos .tiendaPerifericos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .menuProductos .allProductos .tiendaPerifericos h1 {
+        color: blueviolet;
+        font-size: 45px;
+        margin: 30px 0;
+        font-family: 'Courier New', Courier, monospace; }
+      .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid blueviolet;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px 0; }
+        .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div h3 {
+          color: white; }
+        .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div a {
+          color: white;
+          background-color: blueviolet;
+          padding: 4px;
+          border-radius: 4px;
+          text-decoration: none; }
+          .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div a:hover {
+            background-color: indigo;
+            transition: 1.2s; }
+
+.footerRedes {
+  grid-area: footerRedes;
+  background-image: linear-gradient(black, #555555);
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  align-items: center; }
+
+@media (min-width: 950px) {
+  .containerIndex2 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex2 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; }
+  .menuProductos .allProductos .tiendaPc {
+    margin: 40px 0; }
+    .menuProductos .allProductos .tiendaPc .imgPc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .menuProductos .allProductos .tiendaPc .imgPc div {
+        margin: 10 10px; }
+        .menuProductos .allProductos .tiendaPc .imgPc div img {
+          width: 300px; }
+  .menuProductos .allProductos .tiendaMonitores {
+    margin: 40px 0; }
+    .menuProductos .allProductos .tiendaMonitores .imgMonitores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .menuProductos .allProductos .tiendaMonitores .imgMonitores div {
+        margin: 10 10px; }
+        .menuProductos .allProductos .tiendaMonitores .imgMonitores div img {
+          width: 300px; }
+  .menuProductos .allProductos .tiendaPerifericos {
+    margin: 40px 0; }
+    .menuProductos .allProductos .tiendaPerifericos .imgPerifericos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div {
+        margin: 10 10px; }
+        .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div img {
+          width: 300px; } }
+
+@media (min-width: 550px) {
+  .containerIndex2 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex2 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; } }
+
+.containerIndex3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "marcas3 marcas3 marcas3 marcas3" "navegacion navegacion navegacion navegacion" "registro registro registro registro" "footer3 footer3 footer3 footer3"; }
+  .containerIndex3 .marcas3 {
+    grid-area: marcas3; }
+    .containerIndex3 .marcas3 .navMarcas {
+      background-color: black;
+      display: flex;
+      justify-content: space-evenly; }
+  .containerIndex3 .navegacion {
+    grid-area: navegacion; }
+  .containerIndex3 .registro {
+    grid-area: registro;
+    background-image: url("/img/fondo1.webp");
+    height: 700px;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center; }
+    .containerIndex3 .registro .formulario {
+      border: 2px solid blueviolet;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 40px 10px; }
+      .containerIndex3 .registro .formulario h1 {
+        color: blueviolet; }
+      .containerIndex3 .registro .formulario p {
+        color: white; }
+      .containerIndex3 .registro .formulario #inicio {
+        text-decoration: none;
+        padding: 5px;
+        background: blueviolet;
+        color: white; }
+      .containerIndex3 .registro .formulario #crear {
+        color: white; }
+      .containerIndex3 .registro .formulario form {
+        align-items: center;
+        text-align: center; }
+        .containerIndex3 .registro .formulario form input {
+          margin: 10px 0;
+          background-color: blueviolet; }
+          .containerIndex3 .registro .formulario form input::placeholder {
+            color: white; }
+          .containerIndex3 .registro .formulario form input:active {
+            background-color: black;
+            color: white; }
+  .containerIndex3 .footer3 {
+    grid-area: footer3;
+    background-image: linear-gradient(black, #555555);
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center; }
+
+@media (min-width: 950px) {
+  .containerIndex3 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex3 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; } }
+
+@media (min-width: 550px) {
+  .containerIndex3 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex3 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; } }
+
+@media (min-width: 550px) and (max-width: 1000px) {
+  .containerIndex3 .registro {
+    height: 1100px; } }
+
+@media (min-width: 1000px) {
+  .containerIndex3 .registro .formulario {
+    padding: 20px; } }
+
+.containerIndex4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "marcas marcas marcas marcas" "navegacion navegacion navegacion navegacion" "area area area area" "footerMarcas footerMarcas footerMarcas footerMarcas"; }
+  .containerIndex4 .marcas {
+    grid-area: marcas; }
+    .containerIndex4 .marcas .navMarcas {
+      background-color: black;
+      display: flex;
+      justify-content: space-evenly; }
+  .containerIndex4 .navegacion {
+    grid-area: navegacion; }
+  .containerIndex4 .area {
+    grid-area: area; }
+    .containerIndex4 .area .bannerMembresia {
+      background-image: url("/img/banner4.webp");
+      background-position: center;
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .containerIndex4 .area .bannerMembresia h1 {
+        color: blueviolet;
+        font-size: 40px; }
+      .containerIndex4 .area .bannerMembresia a {
+        text-decoration: none;
+        background-color: blueviolet;
+        padding: 7px;
+        border-radius: 3px;
+        color: white; }
+        .containerIndex4 .area .bannerMembresia a:hover {
+          background-color: indigo;
+          transition: 1.2s; }
+    .containerIndex4 .area .recompensas {
+      background-image: linear-gradient(black, #434343);
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .containerIndex4 .area .recompensas h2 {
+        color: blueviolet;
+        font-size: 45px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      .containerIndex4 .area .recompensas a {
+        text-decoration: none;
+        background-image: linear-gradient(gray, black);
+        padding: 9px;
+        color: white;
+        border: 2px solid gray, black; }
+        .containerIndex4 .area .recompensas a:hover {
+          transition: 3s;
+          color: blueviolet; }
+      .containerIndex4 .area .recompensas .recompensasLogo {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .containerIndex4 .area .recompensas .recompensasLogo img {
+          background-color: white;
+          border-radius: 4px; }
+        .containerIndex4 .area .recompensas .recompensasLogo h4 {
+          color: white; }
+    .containerIndex4 .area .mesesBnef {
+      background-color: #35063c;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      .containerIndex4 .area .mesesBnef div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px 0; }
+        .containerIndex4 .area .mesesBnef div h3 {
+          text-align: center;
+          color: #b300ff; }
+    .containerIndex4 .area .unirseIniciar {
+      background-color: #29032f;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center; }
+      .containerIndex4 .area .unirseIniciar h1 {
+        width: 90%;
+        text-align: center;
+        color: #b300ff; }
+      .containerIndex4 .area .unirseIniciar p {
+        width: 90%;
+        text-align: center;
+        color: white; }
+      .containerIndex4 .area .unirseIniciar div a {
+        background-color: blueviolet;
+        text-decoration: none;
+        color: white;
+        padding: 5px; }
+        .containerIndex4 .area .unirseIniciar div a:hover {
+          background-color: indigo;
+          transition: 1.2s; }
+  .containerIndex4 .footerMarcas {
+    grid-area: footerMarcas;
+    background-image: linear-gradient(black, gray);
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center; }
+
+@media (min-width: 950px) {
+  .containerIndex4 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex4 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; }
+  .containerIndex4 .area .recompensas {
+    height: 500px; }
+  .containerIndex4 .area .mesesBnef {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 400px; }
+  .containerIndex4 .area .unirseIniciar {
+    height: 400px; }
+    .containerIndex4 .area .unirseIniciar p {
+      width: 50%; } }
+
+@media (min-width: 550px) {
+  .containerIndex4 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex4 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; } }
+
+.containerIndex5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "navMarcas navMarcas navMarcas navMarcas" "navegacion navegacion navegacion navegacion" "mainContacto mainContacto mainContacto mainContacto" "footerRedes footerRedes footerRedes footerRedes"; }
+  .containerIndex5 .navMarcas {
+    grid-area: navMarcas;
+    width: 100%; }
+    .containerIndex5 .navMarcas .navMarcas {
+      background-color: black;
+      display: flex;
+      justify-content: space-evenly; }
+  .containerIndex5 .navegacion {
+    grid-area: navegacion; }
+  .containerIndex5 .mainContacto {
+    grid-area: mainContacto; }
+    .containerIndex5 .mainContacto .presContacto {
+      background-image: url("/img/atencion-telefonica.jpg");
+      height: 250px;
+      background-position: center;
+      background-size: cover;
+      text-align: center; }
+      .containerIndex5 .mainContacto .presContacto h1 {
+        padding: 60px 0;
+        font-weight: bolder; }
+    .containerIndex5 .mainContacto .formularioContacto {
+      height: 800px;
+      background-color: #cbcbcb;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .containerIndex5 .mainContacto .formularioContacto div {
+        align-items: center; }
+    .containerIndex5 .mainContacto .infoContacto {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+  .containerIndex5 .footerRedes {
+    grid-area: footerRedes; }
+
+@media (min-width: 950px) {
+  .containerIndex5 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .containerIndex5 .navegacion .navegacionBarra .barraLinks ul li a {
+      font-size: 14px;
+      margin: 0 30px; } }
+
+@media (min-width: 600px) {
+  .containerIndex5 .navegacion .navegacionBarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }

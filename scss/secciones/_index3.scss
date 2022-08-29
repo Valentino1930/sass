@@ -1,0 +1,164 @@
+.containerIndex3 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "marcas3 marcas3 marcas3 marcas3"
+      "navegacion navegacion navegacion navegacion"
+      "registro registro registro registro"
+      "footer3 footer3 footer3 footer3";
+  
+  
+    .marcas3 { 
+        grid-area: marcas3; 
+        .navMarcas{
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+  
+    .navegacion { grid-area: navegacion; }
+  
+    .registro { grid-area: registro; 
+            background-image: url("/img/fondo1.webp");
+            height: 700px;
+            background-position:top;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        .formulario{
+            border: 2px solid blueviolet;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 40px 10px;
+
+            h1{
+                color: blueviolet;
+
+            }
+
+            p{
+                color: white;
+            }
+
+            #inicio{
+                text-decoration: none;
+                padding: 5px;
+                background: blueviolet;
+                color: white;
+            }
+
+            #crear{
+                color: white;
+            }
+
+            form{
+                align-items: center;
+                text-align: center;
+                input{
+                    margin: 10px 0;
+                    background-color: blueviolet;
+                    &::placeholder{
+                        color: white;
+                    }
+                    &:active{
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+
+            
+            
+        }
+    }
+  
+    .footer3 { 
+        grid-area: footer3;
+        background-image: linear-gradient(black,rgb(85, 85, 85));
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        align-items: center;
+ 
+    }
+}
+
+@media (min-width:950px){
+    .containerIndex3{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .barraLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                                margin: 0 30px;
+                            }
+                        }
+                    }
+                }
+            
+        
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:550px){
+    .containerIndex3{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .barraLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                                margin: 0 30px;
+                            }
+                        }
+                    }
+                }
+            
+        
+            }
+        }
+
+        
+
+        
+    }
+}
+
+@media (min-width:550px) and (max-width:1000px){
+    .containerIndex3{
+        .registro{
+            height: 1100px;
+
+        }
+    }
+}
+
+@media  (min-width:1000px){
+    .containerIndex3{
+        .registro{
+            .formulario{
+                padding: 20px;
+            }
+        }
+    }
+}

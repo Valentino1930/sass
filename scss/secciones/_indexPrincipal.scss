@@ -1,0 +1,205 @@
+.contenedorPrincipal {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "marcas marcas marcas marcas"
+      "navegacion navegacion navegacion navegacion"
+      "seccionPrincipal seccionPrincipal seccionPrincipal seccionPrincipal"
+      "footerRedes footerRedes footerRedes footerRedes";
+
+      .marcas { 
+        grid-area: marcas; 
+        width: 100%;
+        
+
+        .navMarcas{
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+    }
+
+    .navegacion { 
+        grid-area: navegacion;
+        
+        .navegacionBarra{
+            background-image: linear-gradient(black,rgb(85, 85, 85));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            .barraLinks ul{
+                display: flex;
+                margin: 0;
+                width: 100%;
+                padding: 0;
+
+                li{
+                    list-style-type: none;
+                    width: 100%;
+
+                    a{
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        font-size: 12px;
+                        margin: 0 3px 0 3px;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                            transition: 2s;
+                            border-radius: 4px;
+                            padding: 4px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+    .seccionPrincipal { 
+        grid-area: seccionPrincipal; 
+
+        .mainInfo{
+            background-image: linear-gradient(black,rgb(21, 21, 21));
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            h1{
+               color: white; 
+            }
+
+            p{
+                color: white;
+                width: 70%;
+                text-align: center;
+            }
+
+            span{
+                color: blueviolet;
+            }
+        }
+
+        .muestras{
+            background-color: black;
+            display: flex;
+            height: 1300px;
+            flex-direction: column;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 20px 40px;
+                &:hover{
+                    background-color: rgb(52, 52, 52);
+                    border-radius: 5px;
+                    transition: 2s;
+                }
+
+                .linksMuestras{
+                    text-decoration: none;
+                    color: blueviolet;
+                    &:hover{
+                        color: white;
+                        transition: 2s;
+                    }
+                }
+
+                
+            }
+
+            
+
+        }
+
+    }
+
+   
+  
+    .footerRedes { 
+        grid-area: footerRedes; 
+        background-image: linear-gradient(black,rgb(85, 85, 85));
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        align-items: center;
+        
+    }
+
+    #link1{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(160, 0, 178);
+        padding: 8px;
+        border-radius: 6px;
+    }
+}
+  
+@media (min-width:950px){
+    .contenedorPrincipal{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .barraLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                                margin: 0 30px;
+                            }
+                        }
+                    }
+                }
+                
+            
+            }
+        }
+
+        .seccionPrincipal{
+            .muestras{
+                display: flex;
+                flex-direction: row;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            
+            }
+        }
+    }
+        
+    
+}
+
+@media (min-width:600px){
+    .contenedorPrincipal{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        .seccionPrincipal{
+            .muestras{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: auto;
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.containerIndex5 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navMarcas navMarcas navMarcas navMarcas"
+      "navegacion navegacion navegacion navegacion"
+      "mainContacto mainContacto mainContacto mainContacto"
+      "footerRedes footerRedes footerRedes footerRedes";
+  
+  
+  .navMarcas { 
+    grid-area: navMarcas; 
+    width: 100%;
+        .navMarcas{
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+        
+        }
+    }
+    
+
+    
+  
+  .navegacion { 
+        grid-area: navegacion; 
+   
+    }
+  
+  .mainContacto { 
+        grid-area: mainContacto; 
+        .presContacto{
+            background-image: url("/img/atencion-telefonica.jpg");
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            
+            h1{
+                padding: 60px 0;
+                font-weight: bolder;
+            }
+        }
+
+        .formularioContacto{
+            height: 800px;
+            background-color: rgb(203, 203, 203);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            div{
+                align-items: center;
+            }
+
+           
+        }
+
+        .infoContacto{
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    }
+  
+  .footerRedes { grid-area: footerRedes; }
+
+
+}
+
+@media (min-width:950px){
+    .containerIndex5{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .barraLinks{
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                                margin: 0 30px;
+                            }
+                        }
+                    }
+                }
+                
+            
+            }
+        }
+       
+    }
+
+}
+
+@media (min-width:600px){
+    .containerIndex5{
+        .navegacion{
+            .navegacionBarra{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}
