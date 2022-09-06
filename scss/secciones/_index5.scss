@@ -17,7 +17,8 @@
             background-color: black;
             display: flex;
             justify-content: space-evenly;
-        
+            
+
         }
     }
     
@@ -26,44 +27,106 @@
   
   .navegacion { 
         grid-area: navegacion; 
-   
     }
   
   .mainContacto { 
-        grid-area: mainContacto; 
-        .presContacto{
-            background-image: url("/img/atencion-telefonica.jpg");
-            height: 250px;
-            background-position: center;
-            background-size: cover;
-            text-align: center;
-            
-            h1{
-                padding: 60px 0;
-                font-weight: bolder;
+        grid-area: mainContacto;
+        
+        .banner_contacto{
+            h3{
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+                color: black;
+                
+            }
+        }
+
+        .infoContacto{
+            background-image: linear-gradient(white,gray);
+            height: auto;
+            h2{
+                padding: 30px;
+                text-align: center;
+                color: blueviolet;
+                font-size: 35px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .opcionesContacto{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px;
+    
+                    h5{
+                        font-size: 24px;
+                        color: black;
+                        font-weight: bolder;
+                    }
+    
+                    p{
+                        text-align: center;
+                    }
+    
+                    a{
+                        background-color: blueviolet;
+                        color: white;
+                        padding: 5px;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: rgb(73, 2, 139);
+                            transition: 2s;
+                        }
+                    }
+                }
             }
         }
 
         .formularioContacto{
-            height: 800px;
-            background-color: rgb(203, 203, 203);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            div{
+            .soporteInicio{
+                display: flex;
+                flex-direction: column;
                 align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-image: url("../img/fondoVioleta.jpg");
+                height: 400px;
+                margin: 0 20px;
+                border: 3px solid blueviolet;
+                h1{
+                    color: black;
+                    font-weight: bolder;
+                }
             }
+            .soporteFormulario{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: rgb(233, 233, 233);
+                border: 3px solid gray;
+                margin:  0 20px;
+                height: 500px;
+                h3{
+                    color: black;
+                    font-weight: bolder;
+                    font-size: 30px;
+                    text-decoration: underline;
+                }
 
-           
-        }
-
-        .infoContacto{
-            height: 600px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-
+                form{
+                    input{
+                        border: none;
+                        border-bottom: 2px solid rgb(85, 85, 85);
+                        background-color: rgb(233, 233, 233);
+                    }
+                }
+            }
         }
     }
   
@@ -93,7 +156,51 @@
             
             }
         }
-       
+       .mainContacto{
+            .banner_contacto{
+                img{
+                    width: 100%;
+                    height: 450px;
+                }
+                h3{
+                    top: 40%;
+                    left: 30%;
+                    font-size: 70px;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+
+            .infoContacto{
+                height:1100px;
+                h2{
+                    font-size: 50px;
+                }
+                .opcionesContacto{
+                   display: flex;
+                   justify-content: center;
+                }
+            }
+            .formularioContacto{
+               display: flex;
+               justify-content: center;
+               .soporteInicio{
+                    height: 500px;
+                    margin: 0;
+                    width: 500px;
+                    margin-left: 30px;
+               }
+
+               .soporteFormulario{
+                height: 500px;
+                margin: 0;
+                width: 500px;
+                margin-right: 30px;
+               }
+            }
+       }
+
+      
     }
 
 }
@@ -105,6 +212,14 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+            }
+        }
+
+        .mainContacto{
+            .banner_contacto{
+                h3{
+                    font-size: 40px;
+                }
             }
         }
     }
