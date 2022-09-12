@@ -1,8 +1,9 @@
 .containerIndex3 {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
+    min-height: 100vh;
     grid-template-areas:
       "marcas3 marcas3 marcas3 marcas3"
       "navegacion navegacion navegacion navegacion"
@@ -23,7 +24,7 @@
   
     .registro { grid-area: registro; 
             background-image: url("../img/fondo1.webp");
-            height: 700px;
+            height: 100vh;
             background-position:top;
             background-size: cover;
             display: flex;
