@@ -46,7 +46,7 @@
                     </ul>
 
                 </div>
-
+                <a href="#"><img src="img/carrito-de-compras (2).png" alt="" width="30px"></a>
             
             </div>
 
@@ -66,83 +66,20 @@
                 <div class="tiendaPc">
                     <h1>PC GAMER</h1>
 
-                    <div class="imgPc">
-                        <div>
-                            <img src="img/pc1.webp" alt=""  width="190px">
-                            <h3>AOURUS S12th</h3>
-                            <h3>$250</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/pc2.webp" alt="" width="190px" >
-                            <h3>AOURUS S20th</h3>
-                            <h3>$300</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/pc3.webp" alt=""  width="190px"> 
-                            <h3>AOURUS C12th</h3>
-                            <h3>$430</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/pc4.webp" alt="" width="190px" >
-                            <h3>AOURUS S10th</h3>
-                            <h3>$450</h3>
-                            <a href="">COMPRARr</a>
-                        </div>
-                        <div>
-                            <img src="img/pc5.webp" alt=""width="190px">
-                            <h3>AOURUS S9th</h3>
-                            <h3>$550</h3>
-                            <a href="">COMPRAR</a>
-                        </div>  
-                        <div>
-                            <img src="img/pc1.webp" alt=""  width="190px">
-                            <h3>AOURUS S12th</h3>
-                            <h3>$250</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
+                    <div id="imgPc">
+                        
                     </div>
+
+                    
                 </div>
 
                 <div class="tiendaMonitores">
                     <h1>MONITORES</h1>
 
-                    <div class="imgMonitores">
+                   
 
-                        <div>
-                            <img src="img/mon1.webp" alt="" width="190px">
-                            <h3>AOURUS FV35</h3>
-                            <h3>$350</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/mon2.webp" alt="" width="190px">
-                            <h3>AOURUS FV35</h3>
-                            <h3>$220</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/mon3.webp" alt="" width="190px">
-                            <h3>AOURUS FV35</h3>
-                            <h3>$220</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/mon4.webp" alt="" width="190px">
-                            <h3>AOURUS FV35</h3>
-                            <h3>$300</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/mon5.webp" alt="" width="190px">
-                            <h3>AOURUS FV35</h3>
-                            <h3>$120</h3>
-                            <a href="">COMPRAR</a>
-                        </div>  
-                       
-
+                    <div id="imgMonitores">
+                        
                     </div>
 
                 </div>
@@ -150,46 +87,35 @@
                 <div class="tiendaPerifericos">
                     <h1>PERIFERICOS</h1>
 
-                    <div class="imgPerifericos">
-
-                        <div>
-                            <img src="img/per1.webp" alt="" width="190px">
-                            <h3>AOURUS K9</h3>
-                            <h3>$30</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/per2.webp" alt="" width="190px">
-                            <h3>AOURUS K12</h3>
-                            <h3>$40</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/per3.webp" alt="" width="190px">
-                            <h3>AOURUS H35</h3>
-                            <h3>$50</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/per4.webp" alt="" width="190px">
-                            <h3>AOURUS H30</h3>
-                            <h3>$55</h3>
-                            <a href="">COMPRAR</a>
-                        </div>
-                        <div>
-                            <img src="img/per5.webp" alt="" width="190px">
-                            <h3>AOURUS S30</h3>
-                            <h3>$65</h3>
-                            <a href="">COMPRAR</a>
-                        </div>  
+                    <div id="imgPerifericos"> 
                         
 
                     </div>
                 </div>
 
+                <div class="carrito">
+                    <h4>Tu carrito:</h4>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="totalPC">
+                            
+                        </tbody>
+                    </table>
+                    <h4 id="total">Total a pagar $:</h4>
+                </div>
+
             </div>
 
+
         </div>
+
+        
         
         <div class="footerRedes">
 
@@ -202,5 +128,8 @@
         </div>
       
     </div>
+
+    <script src="./javaScript/carrito.js"></script>
+
 </body>
 </html>

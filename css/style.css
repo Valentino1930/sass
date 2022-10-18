@@ -202,29 +202,27 @@
         font-size: 45px;
         margin: 30px 0;
         font-family: 'Courier New', Courier, monospace; }
-      .menuProductos .allProductos .tiendaPc .imgPc div {
+      .menuProductos .allProductos .tiendaPc #imgPc {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         flex-wrap: wrap;
-        border: 2px solid blueviolet;
-        border-radius: 10px;
-        padding: 30px;
-        margin: 20px 0; }
-        .menuProductos .allProductos .tiendaPc .imgPc div:hover {
-          background-color: #383838;
-          transition: 3s; }
-        .menuProductos .allProductos .tiendaPc .imgPc div h3 {
+        justify-content: space-evenly; }
+        .menuProductos .allProductos .tiendaPc #imgPc .card {
+          margin: 10px;
+          background-color: rgba(0, 0, 0, 0.192);
+          align-items: center;
+          text-align: center;
+          border: 3px solid blueviolet;
+          border-radius: 10px;
           color: white; }
-        .menuProductos .allProductos .tiendaPc .imgPc div a {
-          color: white;
-          background-color: blueviolet;
-          padding: 4px;
-          border-radius: 4px;
-          text-decoration: none; }
-          .menuProductos .allProductos .tiendaPc .imgPc div a:hover {
-            background-color: indigo;
-            transition: 1.2s; }
+          .menuProductos .allProductos .tiendaPc #imgPc .card button {
+            background-color: blueviolet;
+            border: none; }
+            .menuProductos .allProductos .tiendaPc #imgPc .card button:hover {
+              background-color: #3c0074;
+              transition: 1.3s; }
+          .menuProductos .allProductos .tiendaPc #imgPc .card:hover {
+            background-color: rgba(34, 34, 34, 0.678);
+            transition: 3s; }
     .menuProductos .allProductos .tiendaMonitores {
       display: flex;
       flex-direction: column;
@@ -234,29 +232,27 @@
         font-size: 45px;
         margin: 30px 0;
         font-family: 'Courier New', Courier, monospace; }
-      .menuProductos .allProductos .tiendaMonitores .imgMonitores div {
+      .menuProductos .allProductos .tiendaMonitores #imgMonitores {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         flex-wrap: wrap;
-        border: 2px solid blueviolet;
-        border-radius: 10px;
-        padding: 30px;
-        margin: 20px 0; }
-        .menuProductos .allProductos .tiendaMonitores .imgMonitores div:hover {
-          background-color: #383838;
-          transition: 3s; }
-        .menuProductos .allProductos .tiendaMonitores .imgMonitores div h3 {
+        justify-content: space-evenly; }
+        .menuProductos .allProductos .tiendaMonitores #imgMonitores .card {
+          margin: 10px;
+          background-color: rgba(0, 0, 0, 0.192);
+          align-items: center;
+          text-align: center;
+          border: 3px solid blueviolet;
+          border-radius: 10px;
           color: white; }
-        .menuProductos .allProductos .tiendaMonitores .imgMonitores div a {
-          color: white;
-          background-color: blueviolet;
-          padding: 4px;
-          border-radius: 4px;
-          text-decoration: none; }
-          .menuProductos .allProductos .tiendaMonitores .imgMonitores div a:hover {
-            background-color: indigo;
-            transition: 1.2s; }
+          .menuProductos .allProductos .tiendaMonitores #imgMonitores .card button {
+            background-color: blueviolet;
+            border: none; }
+            .menuProductos .allProductos .tiendaMonitores #imgMonitores .card button:hover {
+              background-color: #3c0074;
+              transition: 1.3s; }
+          .menuProductos .allProductos .tiendaMonitores #imgMonitores .card:hover {
+            background-color: rgba(34, 34, 34, 0.678);
+            transition: 3s; }
     .menuProductos .allProductos .tiendaPerifericos {
       display: flex;
       flex-direction: column;
@@ -266,29 +262,37 @@
         font-size: 45px;
         margin: 30px 0;
         font-family: 'Courier New', Courier, monospace; }
-      .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div {
+      .menuProductos .allProductos .tiendaPerifericos #imgPerifericos {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         flex-wrap: wrap;
-        border: 2px solid blueviolet;
-        border-radius: 10px;
-        padding: 30px;
-        margin: 20px 0; }
-        .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div:hover {
-          background-color: #383838;
-          transition: 3s; }
-        .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div h3 {
+        justify-content: space-evenly; }
+        .menuProductos .allProductos .tiendaPerifericos #imgPerifericos .card {
+          margin: 10px;
+          background-color: rgba(0, 0, 0, 0.192);
+          align-items: center;
+          text-align: center;
+          border: 3px solid blueviolet;
+          border-radius: 10px;
           color: white; }
-        .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div a {
-          color: white;
-          background-color: blueviolet;
-          padding: 4px;
-          border-radius: 4px;
-          text-decoration: none; }
-          .menuProductos .allProductos .tiendaPerifericos .imgPerifericos div a:hover {
-            background-color: indigo;
-            transition: 1.2s; }
+          .menuProductos .allProductos .tiendaPerifericos #imgPerifericos .card button {
+            background-color: blueviolet;
+            border: none; }
+            .menuProductos .allProductos .tiendaPerifericos #imgPerifericos .card button:hover {
+              background-color: #3c0074;
+              transition: 1.3s; }
+          .menuProductos .allProductos .tiendaPerifericos #imgPerifericos .card:hover {
+            background-color: rgba(34, 34, 34, 0.678);
+            transition: 3s; }
+    .menuProductos .allProductos .carrito {
+      background-color: black;
+      width: 100%; }
+      .menuProductos .allProductos .carrito h4 {
+        align-items: center;
+        text-align: center;
+        color: blueviolet;
+        font-size: 30px; }
+      .menuProductos .allProductos .carrito th {
+        color: white; }
 
 .footerRedes {
   grid-area: footerRedes;
@@ -684,7 +688,7 @@
     height: 450px; }
   .containerIndex5 .mainContacto .banner_contacto h3 {
     top: 40%;
-    left: 30%;
+    left: 50%;
     font-size: 70px;
     color: black;
     font-weight: bold; }
