@@ -134,7 +134,7 @@ const carrito=[]
 function renderizarCaratsPC(){
     for (const producto of pc){
         contenedorPC.innerHTML+=`
-        <div class="card" id="cartaDiseño" style="width: 18rem;">
+        <div  class="card" id="cartaDiseño" style="width: 18rem;">
             <img src=${producto.imagen} class="card-img-top" alt=${producto.nombre}>
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
@@ -155,7 +155,7 @@ function renderizarCaratsPC(){
 function renderizarCaratsMonitores(){
     for (const producto of monitores){
         contenedorMonitores.innerHTML+=`
-        <div class="card" id="cartaDiseño" style="width: 18rem;">
+        <div  class="card" id="cartaDiseño" style="width: 18rem;">
             <img src=${producto.imagen} class="card-img-top" alt=${producto.nombre}>
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
@@ -176,7 +176,7 @@ function renderizarCaratsMonitores(){
 function renderizareCartasPer(){
     for (const producto of perifericos){
         contenedorPerifericos.innerHTML+=`
-        <div class="card" id="cartaDiseño" style="width: 18rem;">
+        <div  class="card" id="cartaDiseño" style="width: 18rem;">
             <img src=${producto.imagen} class="card-img-top" alt=${producto.nombre}>
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
@@ -202,7 +202,6 @@ renderizarCaratsPC()
 
 function agregarCarro (productoAComprar){
     carrito.push(productoAComprar)
-    alert("Producto "+productoAComprar.nombre+" agregado al carro!");
     document.getElementById("totalPC").innerHTML += `
         <tr>
             <td>${productoAComprar.id}</td>
@@ -215,4 +214,31 @@ function agregarCarro (productoAComprar){
 
     document.getElementById("total").innerText =  "Total a pagar $: " + totalPrecio
 
+    Swal.fire({
+        title: 'Producto Agregado Exitosamente',
+        text: productoAComprar.nombre,
+        imageUrl: productoAComprar.imagen,
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        background : "rgba(192, 191, 191)",
+        color : "blueviolet",
+      })
+
+}
+
+
+const btnFinal = document.getElementById("btnFinalizar")
+
+btnFinal.onclick = () => {
+    document.getElementById("totalPC").innerHTML = ""
+    document.getElementById("total").innerText =  "Total a pagar $: "
+
+    Toastify({
+        text: "Compra Finalizada",
+        duration: 3000,
+        style:{
+            background:"blueviolet",
+        }
+    }).showToast();
 }

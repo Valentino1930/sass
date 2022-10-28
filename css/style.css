@@ -193,12 +193,17 @@
     flex-direction: column;
     align-content: center;
     align-items: center; }
+    .menuProductos .allProductos #btnFinalizar {
+      background-color: blueviolet;
+      margin: 25px;
+      border: none; }
     .menuProductos .allProductos .tiendaPc {
       display: flex;
       flex-direction: column;
       align-items: center; }
       .menuProductos .allProductos .tiendaPc h1 {
         color: blueviolet;
+        text-shadow: 0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet;
         font-size: 45px;
         margin: 30px 0;
         font-family: 'Courier New', Courier, monospace; }
@@ -229,6 +234,7 @@
       align-items: center; }
       .menuProductos .allProductos .tiendaMonitores h1 {
         color: blueviolet;
+        text-shadow: 0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet;
         font-size: 45px;
         margin: 30px 0;
         font-family: 'Courier New', Courier, monospace; }
@@ -259,6 +265,7 @@
       align-items: center; }
       .menuProductos .allProductos .tiendaPerifericos h1 {
         color: blueviolet;
+        text-shadow: 0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet;
         font-size: 45px;
         margin: 30px 0;
         font-family: 'Courier New', Courier, monospace; }
@@ -369,32 +376,64 @@
   .containerIndex3 #registro {
     grid-area: registro;
     background-image: url("../img/fondo1.webp");
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-position: top;
     background-size: cover; }
     .containerIndex3 #registro h1 {
-      color: wheat; }
+      color: #00f2ff;
+      font-size: 5rem;
+      text-align: center;
+      padding-top: 20px;
+      text-shadow: 0 0 2px #03e9f4, 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 40px #03e9f4; }
     .containerIndex3 #registro #formulario {
-      padding: 10vh 24vw; }
+      padding: 10vh 24vw;
+      height: auto; }
       .containerIndex3 #registro #formulario form {
         background: var(--color-darkblue-alpha);
-        padding: 2.5rem 0.625rem;
         border-radius: 0.25rem;
         box-shadow: 0 0 2px #03e9f4, 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 40px #03e9f4;
         display: flex;
         flex-direction: column;
         align-items: center; }
+        .containerIndex3 #registro #formulario form button {
+          margin: 20px; }
+        .containerIndex3 #registro #formulario form #btnR {
+          background-color: #03e9f4;
+          border: none;
+          color: black;
+          margin: 20px; }
+          .containerIndex3 #registro #formulario form #btnR:hover {
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4; }
+        .containerIndex3 #registro #formulario form #btnSesion {
+          background-color: rgba(255, 255, 255, 0);
+          border: none;
+          color: #03e9f4;
+          text-decoration: underline;
+          cursor: pointer;
+          margin-bottom: 20px; }
+          .containerIndex3 #registro #formulario form #btnSesion:hover {
+            color: #1cc5ce; }
+        .containerIndex3 #registro #formulario form label {
+          color: #00f2ff;
+          text-shadow: 1.1px 1.1px #0ecbd4;
+          font-size: 2rem;
+          margin: 20px; }
         .containerIndex3 #registro #formulario form input {
           display: block;
           height: 2.375rem;
           padding: 0.375rem 0.75rem;
-          color: #495057;
-          background-color: #fff;
+          background-color: rgba(255, 255, 255, 0);
           background-clip: padding-box;
-          border: 1px solid #ced4da;
-          border-radius: 0.25rem;
-          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+          margin: 14px;
+          border: none;
+          border-bottom: 2px solid white;
+          color: white; }
+          .containerIndex3 #registro #formulario form input:focus {
+            box-shadow: 0 0 2px #03e9f4,  0 0 10px #03e9f4,  0 0 20px #03e9f4,  0 0 40px #03e9f4; }
   .containerIndex3 .footer3 {
     grid-area: footer3;
     background-image: linear-gradient(black, #555555);
@@ -421,13 +460,9 @@
       font-size: 14px;
       margin: 0 30px; } }
 
-@media (min-width: 550px) and (max-width: 1000px) {
-  .containerIndex3 .registro {
-    height: 1100px; } }
-
-@media (min-width: 1000px) {
-  .containerIndex3 .registro .formulario {
-    padding: 20px; } }
+@media (max-width: 800px) {
+  .containerIndex3 #registro h1 {
+    font-size: 2rem; } }
 
 .containerIndex4 {
   display: grid;

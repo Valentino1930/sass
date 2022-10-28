@@ -101,6 +101,14 @@
         align-content: center;
         align-items: center;
 
+        #btnFinalizar{
+            background-color: blueviolet;
+            margin: 25px;
+            border: none;
+
+            
+        }
+
         .tiendaPc{
             
             display: flex;
@@ -109,6 +117,7 @@
 
             h1{
                 color: blueviolet;
+                text-shadow: 0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet;
                 font-size: 45px;
                 margin: 30px 0;
                 font-family: 'Courier New', Courier, monospace;
@@ -160,6 +169,7 @@
 
             h1{
                 color: blueviolet;
+                text-shadow: 0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet;
                 font-size: 45px;
                 margin: 30px 0;
                 font-family: 'Courier New', Courier, monospace;
@@ -206,6 +216,7 @@
 
             h1{
                 color: blueviolet;
+                text-shadow: 0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet;
                 font-size: 45px;
                 margin: 30px 0;
                 font-family: 'Courier New', Courier, monospace;
@@ -257,6 +268,7 @@
             color: white;
         }
         }
+        
            
     }
 
