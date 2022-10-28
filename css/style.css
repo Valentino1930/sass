@@ -366,45 +366,35 @@
       justify-content: space-evenly; }
   .containerIndex3 .navegacion {
     grid-area: navegacion; }
-  .containerIndex3 .registro {
+  .containerIndex3 #registro {
     grid-area: registro;
     background-image: url("../img/fondo1.webp");
     height: 100vh;
+    width: 100%;
     background-position: top;
-    background-size: cover;
-    display: flex;
-    justify-content: center; }
-    .containerIndex3 .registro .formulario {
-      border: 2px solid blueviolet;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
-      justify-content: space-evenly;
-      margin: 40px 10px; }
-      .containerIndex3 .registro .formulario h1 {
-        color: blueviolet; }
-      .containerIndex3 .registro .formulario p {
-        color: white; }
-      .containerIndex3 .registro .formulario #inicio {
-        text-decoration: none;
-        padding: 5px;
-        background: blueviolet;
-        color: white; }
-      .containerIndex3 .registro .formulario #crear {
-        color: white; }
-      .containerIndex3 .registro .formulario form {
-        align-items: center;
-        text-align: center; }
-        .containerIndex3 .registro .formulario form input {
-          margin: 10px 0;
-          background-color: blueviolet; }
-          .containerIndex3 .registro .formulario form input::placeholder {
-            color: white; }
-          .containerIndex3 .registro .formulario form input:active {
-            background-color: black;
-            color: white; }
+    background-size: cover; }
+    .containerIndex3 #registro h1 {
+      color: wheat; }
+    .containerIndex3 #registro #formulario {
+      padding: 10vh 24vw; }
+      .containerIndex3 #registro #formulario form {
+        background: var(--color-darkblue-alpha);
+        padding: 2.5rem 0.625rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 2px #03e9f4, 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 40px #03e9f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containerIndex3 #registro #formulario form input {
+          display: block;
+          height: 2.375rem;
+          padding: 0.375rem 0.75rem;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .containerIndex3 .footer3 {
     grid-area: footer3;
     background-image: linear-gradient(black, #555555);
